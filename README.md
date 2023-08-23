@@ -1,3 +1,5 @@
+![Az-900 Custom Banner](./img/Banner%20-%20AZ-900.png)
+
 # My AZ-900 Exam Study Documentation Repository
 
 Welcome to my personal repository! Here, I'm documenting my study journey as I prepare for the Microsoft AZ-900 certification exam. This repository serves as a record of my study process and integration with Notion, in case it's helpful to others seeking similar resources.
