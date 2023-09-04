@@ -9,7 +9,7 @@
 # **Azure Fundamentals AZ-900**
 
 - [Microsoft Certified: Azure Fundamentals - Certifications](https://learn.microsoft.com/es-es/certifications/azure-fundamentals/)
-- **CERTIFICACIONES** | Enlace al curso: [link](https://www.notion.so/AZ-900-397a1b1a07ef49e9a404197742dee1d2?pvs=21)
+- **CERTIFICATION** | Link to the course: [link](https://www.notion.so/AZ-900-397a1b1a07ef49e9a404197742dee1d2?pvs=21)
 
 ---
 
