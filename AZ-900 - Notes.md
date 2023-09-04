@@ -493,7 +493,7 @@ Types of data
 - Designed for storage of **files of any kind**
 - Three **storage tiers**
     - **Hot** - frequently accessed data
-    - **Cool** - infrequently accessed data (lower availability, highdurability)
+    - **Cool** - infrequently accessed data (lower availability, high durability)
     - Archive - rarely (if-ever) accessed data
 - Containers with blobs
 
@@ -559,50 +559,256 @@ Types of data
     - **Highly responsive** (Real time) applications with super low latency responses <10ms
     - **Multi-regional** applications
 
-### **SQL Database**
+### Azure SQL Product Family
 
-- Relational database service in the cloud (PaaS)(DBaaS - DB as a Service)
-- **Structured data service** defined using schema and relationships
-- **Rich Query Capabilities** (SQL)
-- **High-performance**, **reliable**, **fully managed** and **secure** database for building applications
-
-### **Database for MySQL**
-
-### **Database for PostgreSQL**
+- **SQL Database**
+    - Relational database service in the cloud (PaaS)(DBaaS - DB as a Service)
+    - **Structured data service** defined using schema and relationships
+    - **Rich Query Capabilities** (SQL)
+    - **High-performance**, **reliable**, **fully managed** and **secure** database for building applications
+- **Managed Instance**
+- **SQL Data Ware House**
+- **SQL VM**
+- **Database for MySQL**
+- **Database for PostgreSQL**
 
 ### **SQL Managed Instance**
+
+### Summary
+
+- **Azure Cosmos DB** - Globally distributed NoSQL Database, low latency, multi-master perfect for serverless
+- **Azure SQL Database** - Reliable relational database based on SQL Server
+- **Azure Database for MySQL** - Azure SQL version for MySQL database enginer
+- **Azure Database for PostgreSQL** - Azure SQL version for PostgreSQL database engine
+- **Azure SQL Managed Instance** - Fully fledged SQL Server managed by cloud provider
+- **Azure SQL on VM** - Fully fledged SQL Server on IaaS
+- **Azure SQL DW (Synapse)** - Massively Parallel Processing (MPP) version of SQL Server
 
 ## [**Episode 13: Azure Marketplace**](https://youtu.be/ersOL_o_lzc)
 
 - Skills Learned
     - Describe the **Azure Marketplace**
 
+Key characteristics:
+
+- **Azure shop**
+- **First** and **third-party** products
+- **IaaS**, **PaaS** and **SaaS**
+
+Commercial Marketplace
+
+**Microsoft AppSource** (Business users)
+
+- Azure
+- Power BI
+- Dynamics 365
+- Microsoft 365
+
+**Azure Marketplace** (Developers & IT Pros)
+
+- Azure
+
 # **Describe some of the solutions available on Azure**
 
 ## [**Episode 14: Azure IoT Services | IoT Hub, IoT Central, Azure Sphere**](https://youtu.be/RHkqFxJWhr8)
 
 - Skills Learned
-    - Describe the benefits and usage of **Internet of Things (IoT) Hub**, **IoT Central**, and **Azure Sphere**
+    - Describe the benefits and usage of
+        - **Internet of Things (IoT) Hub**
+        - **IoT Central**
+        - **Azure Sphere**
+
+### **Internet of Things (IoT) Hub**
+
+- Managed service for bi-directional communication
+- PaaS
+- Hihgly secure, scalable and reliable
+- Integrates with a lot of Azure Services
+- Programable SDKs for popular languages (C, C#, Java, Python, Node.js)
+- Multiple protocols (HTTPS, AMQP, MQTT)
+
+### **IoT Central**
+
+- IoT App Platform - SaaS
+- Industry specific app templates
+- No deep technical knowledge required
+- Service for connecting, management and monitoring IoT devices
+- Highly secure, scalable and reliable
+- Built on top of the IoT Hub service and 30+ other services
+
+### **Azure Sphere**
+
+- Secure end-2-end IoT Solutions
+    - Azure Sphere certified chips MCUs
+    - Azure Sphere OS based on Linux
+    - Azure Secuirty Service trusted device-to-cloud communication
+
+### Summary
+
+- **IoT Hub** - Managed service for bi-directional communication with IoT devices, PaaS
+- **IoT Central** - IoT application platform, dozen of functionalities, Saas
+- **Azure Sphere** - end-2-end approach for building secure IoT solutions
 
 ## [**Episode 15: Azure Big Data and Analytics Services | Synapse Analytics (SQL Datawarehouse), HDInsight & Databricks**](https://youtu.be/JUQXx0R0RfE)
 
 - Skills Learned
-    - Describe the benefits and usage of **Azure Synapse Analytics**, **HDInsight**, and **Azure Databricks**
+    - Describe the benefits and usage of
+        - **Azure Synapse Analytics**
+        - **HDInsight**
+        - **Azure Databricks**
+
+### What is big data
+
+**Big data** Is a field of technology that helps with **extraction**, **processing** and **analysis** of information that is **too large** or **complex** to deal with traditional software.
+
+**Velocity**
+
+- Real time
+- Near real time
+- Periodic
+- Batch
+
+**Volume**
+
+- Megabyte
+- Gigabyte
+- Terabyte
+- Petabyte
+
+**Variety**
+
+- Table
+- Database
+- Photo | Audio
+- Video | Social
+
+### **Azure Synapse Analytics**
+
+- **Big data analytics platform** SaaS
+- **Multiple components**
+    - **Spark**
+    - **Synapse SQL**
+        - SQL Pools (dedicated — pay for provisioned performance)
+        - SQL on-demand (ad-hoc — pay for TB processed
+    - **Synapse Pipelines** (Data Factory - ETL)
+    - **Studio** (unified experience)
+
+### **HDInsight**
+
+- Flexible multi-purpose big data platform PaaS
+- Multiple technologies supported (Hadoop, Spark, Kafka, HBase, Hive, Storm, Machine Learning)
+
+### **Azure Databricks**
+
+- Big data collaboration platform (PaaS)
+- Unified workspace for notebook, cluster, data, access management and collaboration
+- Based on Spark
+- **Integrates** very well with common Azure data services
+
+### Summary
+
+- **Azure Synapse Analytics -** Modern workspace for end-2-end enterprise data warehousing & analytics with a lot of integrated tools like DAta Factory, Spark, SQL, etc.
+- **HDInsight -** Fully-managed open source analytics service with a lot of supported frameworks & tools like Hadoop, Spark, Kafka, Hive, etc.
+- **Azure Databricks** - Apache Spark based analytics platform for data transofmration and collaborative analytics.
 
 ## [**Episode 16: Azure Artificial Intelligence (AI) Services | Machine Learning Studio and Service**](https://youtu.be/8aMzR8iaB9s)
 
 - Skills Learned
     - Describe **Artificial Intelligence (AI) and products that are available for AI** such as Azure **Machine Learning Service and Studio**
 
+### **What is AI**
+
+**Artificial Intelligente** (**AI**) is the simulation of human intelligence & capabilities by compute software
+
+### **What is ML**
+
+**Machine Learning** (**ML**) ****is a subcategory of AI where a compute software is “**taught**” to **draw conlusions** and **make predictions** from **data**.
+
+### Azure **Machine Learning Service and Studio**
+
+- Cloud-based platform for **creating**, **managing** and **publishing** machine learning **models**
+- **PaaS**
+- **ML Workspace** - Top level resource
+- **ML** **Studio** - Web portal for e2e users development
+- Features
+    - **Notebooks** — using Python and R
+    - **Automated ML** — run multiple alhorithms | parameters combinations, choose the best model
+    - **Designer** — graphical interface for no-code development
+    - **Data & Compute** — management of storage and compute resources
+    - **Pipelines** — orchastrate model training, deployment and management tasks
+
 ## [**Episode 17: Azure Serverless Computing Services | Functions, Logic Apps, Event Grid**](https://youtu.be/ansa4M7iTmg)
 
 - Skills Learned
-    - Describe **Serverless computing** and Azure **products** that are available for serverless computing such as Azure **Functions**, **Logic Apps**, and **Event Grid**
+    - Describe **Serverless computing** and Azure **products** that are available for serverless computing such as **Azure Functions**, **Logic Apps**, and **Event Grid**
+
+### What is Serverless computing
+
+**Serverless computing** is cloud-hosted execution environment that allows customers to **run their applications** in the cloud while **completely abstracting underlying infrastructure**
+
+### **Azure Functions**
+
+- **Serverless coding platform** FaaS
+- Designed for **nano-service** architectures and **event-based** applications
+- **Scales** up and down very **quickly**
+- High scalable
+- **Support popular languages** and **frameworks** (.Net & .Net Core, Java, Jode.js, Pyhon, PowerShell, etc.)
+
+### Azure **Logic Apps**
+
+- Serverless enterprise integration service PaaS
+- 200+ connectors for popular services
+- Designed for orquestration of
+    - Business processes
+    - Integration workflows for applications, data, systems and services
+- No-code solution
+
+### **Event Grid**
+
+- Fully managed serverless event routing service
+- Uses **publish-subscribe** model
+- Designed for event-based and near-real time applications
+- Support dozen of **build-in events** from most common **Azure Services**
+
+### Summary
+
+- **Azure Functions -** application development platform for nano-services and event-based application using popular languages | frameworks
+- **Logic Apps -** enterprise integration services for orchestration of business and application workflows
+- **Event Grid -** scalable event routing service for integration and near-real time applications
 
 ## [**Episode 18: Azure DevOps Solutions | Azure DevOps, DevTest Labs**](https://youtu.be/8M4DN9hjAeY)
 
 - Skills Learned
     - Describe **DevOps solutions** available on Azure such as **Azure DevOps** and Azure **DevTest Labs**
+
+### **Azure Devops**
+
+Collection of services for building solutions using DevOps practices
+
+Services inlcuded:
+
+- **Boards**: tracking work
+- **Repos**: code collaboration and verioning with GIT
+- **Pipelines**: building CI/CD workflows (build, test and deploy apps)
+- **Artifacts**: manage project deliverables
+- **Test Plans**: manual and exploratory testing
+
+Evolved from **TFS** (Team foundation server), throught **VSTS** (Visual Studio Team Service)
+
+### **Azure DevTest Labs**
+
+- Services **sandbox** **environment** for **developers/testers** (PaaS)
+- Quick setup of **self-managed virtual** **machines**
+- **Preconfigured templates** for VMs
+- Plenty of additional **artifacts** (tools, apps, custom actions)
+- Lab ******************policies****************** (quotas, sizes, auto-shutdown)
+- Share and automate labs via custom iamges
+- Premade plugins/Api/tools for CI/CD pipeline automation
+
+### Summary
+
+- **Azure DevOps** — e2e platform for building CI/CD pipelines, code versioning, tracking work and managing project deliverables
+- **Azure DevTest Labs** — cloud-based environments for developers and testers with self-serve environments, reusable templates, cost management and multiple integrations
 
 # **Describe Azure management tools**
 
@@ -611,38 +817,129 @@ Types of data
 - Skills Learned
     - Describe **Azure tools** such as **Azure Portal**, **Azure PowerShell**, **Azure CLI** and **Cloud Shell**
 
+### **Azure Portal**
+
+- Public **web-based interface** for management of Azure platform
+- Designed for **self-service**
+- Customizable
+- Simple task
+
+### **Azure PowerShell**
+
+- PowerShell and **module**
+- Designed for **automation**
+- Multi-platform with PowerShell Core
+- Simple to use:
+    - Connect-AzAccount — Log into Azure
+    - Get-AzResourceGRoup — List resource groups
+    - New-AzResourceGroup — Create new resource group
+    - New-AzVm — Create virtual machine
+
+### **Azure CLI**
+
+- Command Line Interface for Azure
+- Designed for automation
+- Multi-platform (Python)
+- Simple to use
+- Native OS terminal scripting
+
+### **Azure Cloud Shell**
+
+- Cloud-based **scripting** **environment**
+- Completely **free**
+- Supports both Azure **PowerShell** and Azure **CLI**
+- Dozen of **additional tools**
+- Multiple client interfaces
+
+### Summary
+
+- **Azure Portal —** Web based portal for self-service management of Azure platform
+- **Azure PowerShell —** Automation module for PowerShell
+- **Azure CLI —** automation module for terminal
+- **Azure Cloud Shell —** free cloud-based scripting environment
+
 ## **[Episode 20: Azure Advisor](https://youtu.be/58_6MkB2znI)**
 
 - Skills Learned Describe **Azure Advisor**
+
+### **Azure Advisor**
+
+Personalized consultand service
+
+- Designed to provide **recommendations** and **best practices** for:
+    - **Cost** (SKU Sizes, idle services, reserved instances, etc)
+    - **Security** (M
+    - **Reliability** (
+    - **Performance** (
+    - **Operational Excellence** (
+- **Actionable** recommendations
+- Free!
+
+### Summary
+
+**Azure Advisor —** 
 
 # Module 3 - **Describe Security, Privacy, Compliance, and Trust (25-30%)**
 
 ## **Describe securing network connectivity in Azure**
 
-**[Episode 21: Security Groups | NSG and ASG | Network Security Groups and Application Security Groups](https://youtu.be/w8H5fWBHddA)**
+## **[Episode 21: Security Groups | NSG and ASG | Network Security Groups and Application Security Groups](https://youtu.be/w8H5fWBHddA)**
 
 - Skills Learned
     - Describe **Network Security Groups** (NSG)
     - Describe **Application Security Groups** (ASG)
 
-**[Episode 22: User-defined Routes (UDR)](https://youtu.be/BUH9kVTrM-8)**
+### **Network Security Groups** (NSG)
+
+- Designed to **filter traffic** to (**inbound**) and from (**outbound**) Azure resources located in Azure **Virtual Network**
+- Filtering controlled by **rules**
+- Ability to have **multiple** inbound and outbound **rules**
+- Rules are created by specifying
+    - **Source**/**destination** (Ip addresses, service tags, application security groups)
+    - **Protocol** (TCP, UDP, any)
+    - **Port** (or Port Ranges, ex. 3389 — **RDP**, 22 — **SSH**, 80 **HTTP**, 443 **HTTPS**)
+    - **Direction** (inbound or outbound)
+    - **Priority** (order of evaluation)
+
+### **Application Security Groups** (ASG)
+
+- Feature that allows **grouping of virtual machines** located in AZure Virtual Network
+- Designed to **reduce** the **maintenance effort** (assign ASG instead of the explicit IP address)
+
+### **Summary**
+
+- Describe **Network Security Groups** (NSG) - Filtering of incoming and outgoing traffic for virtual network resources
+- Describe **Application Security Groups** (ASG) - Logical grouping of virtual network resources for easier maintenance
+
+## **[Episode 22: User-defined Routes (UDR)](https://youtu.be/BUH9kVTrM-8)**
 
 - Skills Learned
     - Describe **User-defined Routes** (UDR)
 
-**[Episode 23: Azure Firewall](https://youtu.be/VIEaz869njk)**
+### What is routing?
+
+Process of finding/selecting a path for a traffic in one or across multiple networks.
+
+### **User-defined Routes** (UDR)
+
+- **Custom** (user-defined, static) **routes** (UDRs)
+- Designed to **override Azure default routing** or **add new** routes
+- Managed via Azure **Route Table** resource
+- **Associated with** a zero or more Virtual Network **subnets**
+
+## **[Episode 23: Azure Firewall](https://youtu.be/VIEaz869njk)**
 
 - Skills Learned
     - Describe **Azure Firewall**
 
-**[Episode 24: Azure DDoS Protection](https://youtu.be/MUVFMF9DgM0)**
+## **[Episode 24: Azure DDoS Protection](https://youtu.be/MUVFMF9DgM0)**
 
 - Skills Learned
     - Describe **Azure DDoS Protection**
 
 # **Describe core Azure Identity services**
 
-**[Episode 25: Azure Identity Services | Identity, Authentication, Authorization & Azure AD](https://youtu.be/b_WIjY-burU)**
+## **[Episode 25: Azure Identity Services | Identity, Authentication, Authorization & Azure AD](https://youtu.be/b_WIjY-burU)**
 
 - Skills Learned
     - Describe the **difference between authentication** and **authorization**
@@ -651,52 +948,52 @@ Types of data
 
 # **Describe security tools and features of Azure**
 
-**[Episode 26: Azure Security Center and usage scenarios](https://youtu.be/tyztKP9rszU)**
+## **[Episode 26: Azure Security Center and usage scenarios](https://youtu.be/tyztKP9rszU)**
 
 - Skills Learned
     - Describe **Azure Security Center**
     - Describe **Azure Security Center** usage scenarios
 
-**[Episode 27: Azure Key Vault](https://youtu.be/AA3yYg9Zq9w)**
+## **[Episode 27: Azure Key Vault](https://youtu.be/AA3yYg9Zq9w)**
 
 - Skills Learned
     - Describe **Azure Key Vault**
 
 # **Describe Azure governance features**
 
-**[Episode 28: Role-Based Access Control (RBAC)](https://youtu.be/4v7ffXxOnwU)**
+## **[Episode 28: Role-Based Access Control (RBAC)](https://youtu.be/4v7ffXxOnwU)**
 
 - Skills Learned
     - Describe the functionality and usage of **Role-Based Access Control (RBAC)**
 
-**[Episode 29: Resource Locks](https://youtu.be/eDH20Ve0eI0)**
+## **[Episode 29: Resource Locks](https://youtu.be/eDH20Ve0eI0)**
 
 - Skills Learned
     - Describe the functionality and usage of **resource locks**
 
-**[Episode 30: Tags](https://youtu.be/J40eJR4qQ0w)**
+## **[Episode 30: Tags](https://youtu.be/J40eJR4qQ0w)**
 
 - Skills Learned
     - Describe the functionality and usage of **tags**
 
-**[Episode 31: Azure Policy](https://youtu.be/9WO4EBgUJXk)**
+## **[Episode 31: Azure Policy](https://youtu.be/9WO4EBgUJXk)**
 
 - Skills Learned
     - Describe the functionality and usage of **Azure Policy**
 
-**[Episode 32: Azure Blueprints](https://youtu.be/3rSCnAZPNfo)**
+## **[Episode 32: Azure Blueprints](https://youtu.be/3rSCnAZPNfo)**
 
 - Skills Learned
     - Describe the functionality and usage of **Azure Blueprints**
 
-**[Episode 33: Cloud Adoption Framework](https://youtu.be/d6usiB4MKq8)**
+## **[Episode 33: Cloud Adoption Framework](https://youtu.be/d6usiB4MKq8)**
 
 - Skills Learned
     - Describe the **Cloud Adoption Framework** for Azure
 
 # **Describe privacy and compliance resources**
 
-**[Episode 34: Core tenets of Security, Privacy, and Compliance](https://youtu.be/zBzsDYZw98M)**
+## **[Episode 34: Core tenets of Security, Privacy, and Compliance](https://youtu.be/zBzsDYZw98M)**
 
 - Skills Learned
     - Describe the purpose of the **Microsoft Privacy Statement**, **Online Services Terms** (OST) and **Data Protection Amendment** (DPA)
@@ -708,31 +1005,31 @@ Types of data
 
 # **Describe methods for planning and managing costs**
 
-**[Episode 35: Cost Affecting Factors](https://youtu.be/Z8wvj_oe97M)**
+## **[Episode 35: Cost Affecting Factors](https://youtu.be/Z8wvj_oe97M)**
 
 - Skills Learned
     - Identify **factors that can affect costs** (**resource types**, **services**, **locations**, **ingress** and **egress traffic**)
 
-**[Episode 36: Cost Reduction Methods and Pricing, TCO Calculators](https://youtu.be/ZV2bfoqFpZ8)**
+## **[Episode 36: Cost Reduction Methods and Pricing, TCO Calculators](https://youtu.be/ZV2bfoqFpZ8)**
 
 - Skills Learned
     - Identify **factors that can reduce costs** (reserved instances, reserved capacity, hybrid use benefit, spot pricing)
     - Describe the functionality and usage of the **Pricing calculator** and the **Total Cost of Ownership (TCO) calculator**
 
-**[Episode 37: Azure Cost Management](https://youtu.be/7w88KBVesPI)**
+## **[Episode 37: Azure Cost Management](https://youtu.be/7w88KBVesPI)**
 
 - Skills Learned
     - Describe the functionality and usage of **Azure Cost Management**
 
 # **Describe Azure Service Level Agreements (SLAs) and service lifecycles**
 
-**[Episode 38: Azure Service Level Agreement (SLA)](https://youtu.be/WuzpcMZ1UxI)**
+## **[Episode 38: Azure Service Level Agreement (SLA)](https://youtu.be/WuzpcMZ1UxI)**
 
 - Skills Learned
     - Describe the purpose of an Azure **Service Level Agreement** (SLA)
     - Identify actions that can impact an **SLA** (i.e. Availability Zones)
 
-**[Episode 39: Service lifecycle in Azure](https://youtu.be/J4HzsmuClV0)**
+## **[Episode 39: Service lifecycle in Azure](https://youtu.be/J4HzsmuClV0)**
 
 - Skills Learned
     - Describe the **service lifecycle in Azure** (Public Preview and General Availability)
@@ -746,6 +1043,6 @@ Types of data
 - Provisioning JSON Format ARM Templates
 - Azure Advisor > recommendations to improve reliability, security, performance and cost reduction
 
-# QWE
+# Other
 
 - whizlabs simulator
