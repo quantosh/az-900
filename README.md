@@ -8,6 +8,8 @@ Welcome to my personal repository! Here, I'm documenting my study journey as I p
 - Progress logs detailing my study sessions and topics covered.
 - Notes, summaries, and mind maps on key Azure concepts.
 - Screenshots and examples of how I've integrated my study plan with Notion.
+- A Markdown file with the notes from the AZ-900 preparation course from [Adam Marczak](https://marczak.io/az-900/) (Thank you Adam 💙)
+- Link to my notes: [AZ-900](AZ-900%20-%20Notes.md)
 
 **Purpose of This Repository:**
 I've created this repository to keep track of my progress and resources while studying for the AZ-900 exam. It's intended for personal use, but I'm making it public in case it's of interest or inspiration to others who are also preparing for this exam or using Notion for study organization.
