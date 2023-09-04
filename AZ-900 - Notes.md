@@ -1,15 +1,11 @@
 # AZ-900
 
-Type: 🖥️ Azure
-Dates: August 8, 2023
-Topic: Azure, Certification, Course
-URL: https://learn.microsoft.com/es-es/certifications/azure-fundamentals/
-Reviewed: No
+**Type:** 🖥️ Azure
+**Dates:** August 8, 2023
+**Topic:** Azure, Certification, Course
+**URL:** https://learn.microsoft.com/es-es/certifications/azure-fundamentals/
 
-![AZ-900.png](AZ-900%20397a1b1a07ef49e9a404197742dee1d2/AZ-900.png)
-
-![Untitled](AZ-900%20397a1b1a07ef49e9a404197742dee1d2/Untitled.png)
-
+![AZ-900.png](./img/Banner%20-%20AZ-900.png)
 # **Azure Fundamentals AZ-900**
 
 - [Microsoft Certified: Azure Fundamentals - Certifications](https://learn.microsoft.com/es-es/certifications/azure-fundamentals/)
